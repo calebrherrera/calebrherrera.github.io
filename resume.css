@@ -45,6 +45,7 @@ body {
 .school-info {
   display: inline-block;
   text-align: top;
+  font-size: 14px;
 }
 
 .bullets {
@@ -58,12 +59,14 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 2px;
+  font-size: 14px;
 }
 
 .company-name,
 .course-name,
 .organization {
   font-weight: bold;
+  font-size: 14px;
 }
 
 .role {
