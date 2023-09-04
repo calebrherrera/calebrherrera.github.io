@@ -4,15 +4,114 @@
 
 <head>
   <title>Caleb Herrera | Portfolio</title>
+
+  <style>
+    body {
+      background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875);
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial;
+      z-index: 100;
+    }
+
+    .header {
+      box-shadow: 0px 0px 10px rgba(0,0,0,1);
+      background-color: rgb(255, 132, 132);
+      margin-bottom: 5px;
+    }
+
+    .nameplate {
+      font-size: 75px;
+    }
+
+    .roles {
+      font-size: 25px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      background-color: #6D6875;
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    .social {
+      position: relative;
+    }
+
+    .social:hover {
+      cursor: pointer;
+    }
+
+    .social-icon {
+      height: 35px;
+      padding: 5px 5px;
+    }
+
+    .social-tooltip {
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      padding: 2px;
+      opacity: 0;
+      transition: 0.15s opacity;
+      position: absolute;
+      bottom: -17px;
+      left: -4px;
+    }
+
+    .social:hover .social-tooltip {
+      opacity: 1;
+    }
+
+    .resume {
+      text-align: center;
+
+    }
+  </style>
 </head>
 
 <body>
-  <!-- <a href="swe.html">
-    SWE Resume
-  </a> -->
-  <a href="CalebHerrera_Resume.pdf">
+  
+  <div class="header">
+    <div class="nameplate">Caleb Herrera</div>
+    <div class="roles">Software Engineering &#124; Cybersecurity</div>
+  </div>
+  <!--
+  <div class="section-title">About me</div>
+  <div class="section-title">Projects</div>
+
+  <div class="section-title">Contacts</div>
+  <a href="CalebHerrera_Resume.pdf" target="_blank">
     SWE Resume
   </a>
+  -->
+
+  <a class="resume" href="CalebHerrera_Resume.pdf">Resume</a>
+
+
+  <div class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/caleb-herrera/" target="_blank">
+        <img class="social-icon" src="icons/Li-In-Bug.png">
+      </a>
+      <div class="social-tooltip">LinkedIn</div>
+    </div>
+    <div class="social">
+      <a href="https://github.com/calebrherrera">
+        <img class="social-icon" src="icons/github-mark.png">
+      </a>
+      <div class="social-tooltip">GitHub</div>
+    </div>
+  </div>
+
 </body>
 
 </html>
