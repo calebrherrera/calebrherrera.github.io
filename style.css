@@ -11,16 +11,19 @@ body {
 }
 
 header {
-    height: 10%;
+    height: 45px;
 }
 
 .container {
     /* border: 2px solid black; */
     width: 91%;
+    min-width: 332px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin-top: 10%; */
 }
 
 .image-container {
