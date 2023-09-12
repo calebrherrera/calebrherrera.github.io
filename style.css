@@ -1,3 +1,7 @@
+html {
+    background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +11,7 @@ body {
     justify-content: space-between;
     width: 100vw;
     font-family: Arial;
-    background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875);
+    /* background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875); */
 }
 
 header {
