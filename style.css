@@ -2,17 +2,31 @@ html {
     background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875);
 }
 
+/* ::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 15px;
+    justify-items: center;
+    align-items: start;
+
+    width: 100ew;
     font-family: Arial;
     /* background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875); */
+    
 }
 
 
@@ -24,7 +38,7 @@ body {
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     /* margin-top: 10%; */
 }
@@ -58,8 +72,16 @@ h1 {
 
 h2 {
     font-size: 20px;
+    font-weight: 500;
     margin-top: 0;
-    font-weight: 300;
+    /* margin-bottom: 0; */
+}
+
+h3 {
+    font-size: 17px;
+    margin-top: 3;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .icon {
@@ -72,7 +94,7 @@ h2 {
 }
 
 .link {
-    width: 50%;
+    width: 100%;
     background-color: #ff7176;
     margin: 5px;
     padding: 5px 15px 5px 15px;
@@ -85,7 +107,7 @@ h2 {
     align-items: center;
 }
 
-.link p {
+.link p, .project p {
     font-weight: 700;
     color: black;
 }
@@ -99,9 +121,52 @@ h2 {
     transform: scale(0.99);
 }
 
+.project {
+    width: 50%;
+    background-color: #ff7176;
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.05s transform;
+    text-decoration: none;
+    align-items: center;
+}
+
+.project-vid {
+    overflow: hidden;
+}
+
+.project .project-skills {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.update {
+    width: 100%;
+    background-color: #ff7176;
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    /* display: flex;
+    justify-content: space-between; */
+    border-radius: 30px;
+    position: relative;
+    transition: 0.05s transform;
+    align-items: center;
+}
+
+.update p {
+    font-weight: 700;
+    color: black;
+}
+
 .footer {
     /* height: 2vh; */
     /* position: fixed;
     bottom: 0; */
+    text-align: center;
     font-size: small;
 }
