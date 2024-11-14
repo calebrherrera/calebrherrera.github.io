@@ -24,11 +24,10 @@ body {
     align-items: start;
 
     width: 100ew;
-    font-family: Arial;
+    font-family: Helvetica, sans-serif, Arial;
     /* background-image: linear-gradient(#FFCDB2, #FFB4A2, #E5989B, #B5838D, #6D6875); */
-    
-}
 
+}
 
 .container {
     /* border: 2px solid black; */
@@ -53,7 +52,8 @@ body {
     align-items: center;
 }
 
-.image-container img, .icon img {
+.image-container img,
+.icon img {
     height: 100%;
 }
 
@@ -107,14 +107,15 @@ h3 {
     align-items: center;
 }
 
-.link p, .project p {
+.link p,
+.project p {
     font-weight: 700;
     color: black;
 }
 
 .link:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
 
 .link:active {
